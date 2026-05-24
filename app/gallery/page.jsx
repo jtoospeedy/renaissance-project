@@ -12,7 +12,7 @@ export default function GalleryPage() {
       <header className="page-head" data-screen-label="01 Gallery head">
         <div className="page-head-bg" />
         <div className="container">
-          <div className="eyebrow">§ The chapter, in pictures</div>
+          <div className="eyebrow">§ Renaissance Project, in pictures</div>
           <h1>Four years of <em>showing up.</em></h1>
           <p className="page-head-lede">Murals, salons, Saturdays in the cold, Sundays on the plaza. Tap a photo to see the story.</p>
         </div>
@@ -24,7 +24,7 @@ export default function GalleryPage() {
 
           <div className="submit-card">
             <h3>Got a photo from a project?</h3>
-            <p>Send your shots to the media team and we&apos;ll add them to the chapter archive. Credit always included.</p>
+            <p>Send your shots to the media team and we&apos;ll add them to the Renaissance Project archive. Credit always included.</p>
             <Link href="/faq#contact" className="btn">Submit a Photo</Link>
           </div>
         </div>

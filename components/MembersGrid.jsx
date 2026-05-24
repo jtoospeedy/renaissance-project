@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { MEMBERS, MEMBER_FILTERS } from "@/lib/members";
 
@@ -48,13 +49,20 @@ export default function MembersGrid() {
               <span className="ornament-corner br" />
               <div className="member-portrait">
                 <div className="member-halo" />
-                <div className="member-initials">{m.initials}</div>
-                <div className="member-initials-cap">[ portrait ]</div>
+                {m.image
+                  ? <Image src={m.image} alt={m.name} fill sizes="160px" style={{ objectFit: "cover", borderRadius: "50%" }} />
+                  : <div className="member-initials-cap">[ portrait ]</div>
+                }
               </div>
               <div className="member-divider" />
               <div className="member-plate">
                 <div className="member-name">{m.name}</div>
                 <div className="member-role">{m.role}</div>
+                {(m.classification || m.major) && (
+                  <div className="member-meta">
+                    {[m.classification, m.major].filter(Boolean).join(" · ")}
+                  </div>
+                )}
                 <div className="member-roman">— N° {m.roman} —</div>
               </div>
             </div>
@@ -69,17 +77,24 @@ export default function MembersGrid() {
         >
           <div className="member-modal">
             <button className="modal-close" onClick={() => setActiveId(null)} aria-label="Close">✕</button>
-            <div className="modal-portrait">{active.initials}</div>
+            <div className="modal-portrait">
+              {active.image
+                ? <Image src={active.image} alt={active.name} fill sizes="120px" style={{ objectFit: "cover", borderRadius: "50%" }} />
+                : active.initials
+              }
+            </div>
             <div className="modal-eyebrow">Officer N° {active.roman}</div>
             <h2 className="modal-name">{active.name}</h2>
             <div className="modal-role">{active.role}</div>
-            <p className="modal-bio">{active.bio}</p>
-            <dl className="modal-meta">
-              <dt>Class</dt><dd>{active.class}</dd>
-              <dt>Major</dt><dd>{active.major}</dd>
-              <dt>Hometown</dt><dd>{active.hometown}</dd>
-              <dt>On the board since</dt><dd>{active.since}</dd>
-            </dl>
+            {active.bio && <p className="modal-bio">{active.bio}</p>}
+            {(active.class || active.major || active.hometown || active.since) && (
+              <dl className="modal-meta">
+                {active.class    && <><dt>Class</dt><dd>{active.class}</dd></>}
+                {active.major    && <><dt>Major</dt><dd>{active.major}</dd></>}
+                {active.hometown && <><dt>Hometown</dt><dd>{active.hometown}</dd></>}
+                {active.since    && <><dt>On the board since</dt><dd>{active.since}</dd></>}
+              </dl>
+            )}
           </div>
         </div>
       )}
