@@ -4,18 +4,12 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import TweaksPanel from "@/components/TweaksPanel";
 import ApplyTweaksEarly from "@/components/ApplyTweaksEarly";
-import { Bodoni_Moda } from 'next/font/google';
 
 // Load fonts via next/font for self-hosting + zero layout shift
 const cinzel = Cinzel({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-cinzel" });
 const ebGaramond = EB_Garamond({ subsets: ["latin"], weight: ["400", "500", "600"], style: ["normal", "italic"], variable: "--font-eb-garamond" });
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-jetbrains-mono" });
-import { Bodoni_Moda } from 'next/font/google';
-
-const bodoniModa = Bodoni_Moda({
-  subsets: ['latin'],
-  display: 'swap', // <-- Add this line
-});
+const bodoni = Bodoni_Moda({ subsets: ["latin"], weight: ["400", "600", "800"], variable: "--font-bodoni", display: "swap" });
 const cormorant = Cormorant_Upright({ subsets: ["latin"], weight: ["400", "500", "700"], variable: "--font-cormorant" });
 const lora = Lora({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-lora" });
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-inter" });
