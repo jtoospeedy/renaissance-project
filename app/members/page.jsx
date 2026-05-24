@@ -2,19 +2,19 @@ import MembersGrid from "@/components/MembersGrid";
 
 export const metadata = {
   title: "E-Board · Renaissance Project",
-  description: "Meet the ten Aggies who keep the chapter running.",
+  description: "Meet the nineteen Aggies who keep Renaissance Project running.",
 };
 
 export default function MembersPage() {
   return (
     <>
-      <header className="page-head" data-screen-label="01 Members head">
+      <header className="page-head" data-screen-label="01 Executive Board head">
         <div className="page-head-bg" />
         <div className="container">
           <div className="eyebrow">§ The E-Board · MMXXVI</div>
           <h1>Nineteen Aggies. <em>One project.</em></h1>
           <p className="page-head-lede">
-            Each board member is elected by the chapter and serves a one-year term. They keep the trains running, the salons humming, and the murals dry.
+            Selected through an application and interview process, each board member serves a one-year term driven by a single purpose — to leave Renaissance Project better than they found it.
           </p>
         </div>
       </header>
@@ -23,12 +23,6 @@ export default function MembersPage() {
         <div className="container">
           <MembersGrid />
 
-          <div className="roll-call">
-            <div className="roll-call-title">— The Chapter Roll —</div>
-            <div className="roll-call-list">
-              142 Aggies in the brotherhood &amp; sisterhood &middot; 26 cohorts since the founding &middot; 3,802 service hours &amp; counting &middot; one city, one campus, one renaissance.
-            </div>
-          </div>
         </div>
       </section>
     </>

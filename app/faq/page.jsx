@@ -4,7 +4,7 @@ import HashScroll from "@/components/HashScroll";
 
 export const metadata = {
   title: "FAQ, Join & Contact · Renaissance Project",
-  description: "Frequently-asked questions, how to apply, and how to reach the chapter.",
+  description: "Frequently-asked questions, how to apply, and how to reach Renaissance Project.",
 };
 
 export default function FAQPage() {
@@ -38,7 +38,7 @@ export default function FAQPage() {
             <aside className="faq-sidebar">
               <div className="faq-sidebar-title">In this section</div>
               <ul>
-                <li><a href="#cat-about" className="anchor-chip" style={{ border: "none", padding: 0 }}>About the chapter</a></li>
+                <li><a href="#cat-about" className="anchor-chip" style={{ border: "none", padding: 0 }}>About Renaissance Project</a></li>
                 <li><a href="#cat-join" className="anchor-chip" style={{ border: "none", padding: 0 }}>Joining &amp; eligibility</a></li>
                 <li><a href="#cat-time" className="anchor-chip" style={{ border: "none", padding: 0 }}>Time &amp; commitment</a></li>
                 <li><a href="#cat-money" className="anchor-chip" style={{ border: "none", padding: 0 }}>Dues &amp; funding</a></li>

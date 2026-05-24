@@ -2,7 +2,7 @@ import EventsList from "@/components/EventsList";
 
 export const metadata = {
   title: "Events · Renaissance Project",
-  description: "Salons, service days, festivals — the full chapter calendar.",
+  description: "Salons, service days, festivals — the full Renaissance Project calendar.",
 };
 
 export default function EventsPage() {
@@ -60,7 +60,7 @@ export default function EventsPage() {
           <div className="ical-band">
             <div>
               <div className="ical-title">Take it with you.</div>
-              <div className="ical-sub">Subscribe to the chapter calendar — auto-syncs every new event to Apple Calendar, Google, or Outlook.</div>
+              <div className="ical-sub">Subscribe to the Renaissance Project calendar — auto-syncs every new event to Apple Calendar, Google, or Outlook.</div>
             </div>
             <a href="#" className="btn">Subscribe · .ics</a>
           </div>
