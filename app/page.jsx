@@ -1,5 +1,5 @@
 import Link from "next/link";
-import TrailerVideo from "@/components/TrailerVideo";
+import TrailerVideo from "../components/TrailerVideo";
 
 export const metadata = {
   title: "Renaissance Project · NC A&T",

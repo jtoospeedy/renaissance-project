@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useEffect, useRef, useState } from "react";
 
@@ -18,12 +18,21 @@ export default function TrailerVideo() {
     const KEY = "rp_trailer_pos";
 
     const onLoaded = () => {
-      const t = parseFloat(localStorage.getItem(KEY) || "0");
-      if (!isNaN(t) && t > 0 && video.duration && t < video.duration - 1) {
-        video.currentTime = t;
+      // Safe window/localStorage guard for Next.js hydration
+      if (typeof window !== "undefined") {
+        const t = parseFloat(localStorage.getItem(KEY) || "0");
+        if (!isNaN(t) && t > 0 && video.duration && t < video.duration - 1) {
+          video.currentTime = t;
+        }
       }
     };
-    const onTimeUpdate = () => localStorage.setItem(KEY, video.currentTime);
+    
+    const onTimeUpdate = () => {
+      if (typeof window !== "undefined") {
+        localStorage.setItem(KEY, video.currentTime.toString());
+      }
+    };
+    
     const onPlay = () => setShowPoster(false);
     const onPause = () => { if (video.currentTime === 0) setShowPoster(true); };
 
@@ -31,6 +40,7 @@ export default function TrailerVideo() {
     video.addEventListener("timeupdate", onTimeUpdate);
     video.addEventListener("play", onPlay);
     video.addEventListener("pause", onPause);
+    
     return () => {
       video.removeEventListener("loadedmetadata", onLoaded);
       video.removeEventListener("timeupdate", onTimeUpdate);
@@ -52,7 +62,8 @@ export default function TrailerVideo() {
         >
           <div>
             <div className="play-btn"><div className="triangle" /></div>
-            <div className="trailer-poster-cap">[ drop trailer.mp4 in /public ]</div>
+            {/* Escaped the brackets cleanly using standard string notation */}
+            <div className="trailer-poster-cap">{"[ drop trailer.mp4 in /public ]"}</div>
           </div>
         </div>
       </div>
