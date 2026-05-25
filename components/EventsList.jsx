@@ -51,7 +51,7 @@ export default function EventsList() {
 
       <div className="events-list">
         {items.length === 0 ? (
-          <div className="events-empty">[ no events queued for this view ]</div>
+          <div className="events-empty">Events will be posted when we return in August 2026. Check back then.</div>
         ) : (
           items.map((e, i) => {
             const on = !!rsvps[tab]?.[i];

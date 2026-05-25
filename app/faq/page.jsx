@@ -126,11 +126,11 @@ export default function FAQPage() {
               <div className="contact-card-val">hello@rp-ncat.org</div>
               <div className="contact-card-sub">For partners, press, and questions.</div>
             </a>
-            <a href="#" className="contact-card">
+            <a href="https://www.instagram.com/renaissanceproject2023" target="_blank" rel="noopener noreferrer" className="contact-card">
               <div className="contact-card-icon">@</div>
               <h4>Instagram</h4>
-              <div className="contact-card-val">@rp_ncat</div>
-              <div className="contact-card-sub">Day-of recap, salon clips, calls.</div>
+              <div className="contact-card-val">@renaissanceproject2023</div>
+              <div className="contact-card-sub">Updates, recaps, and announcements.</div>
             </a>
             <a href="#" className="contact-card">
               <div className="contact-card-icon">⌂</div>
