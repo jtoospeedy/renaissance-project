@@ -11,10 +11,10 @@ export default function EventsPage() {
       <header className="page-head" data-screen-label="01 Events head">
         <div className="page-head-bg" />
         <div className="container">
-          <div className="eyebrow">§ Spring 2026 · Calendar</div>
-          <h1>The work, <em>by the week.</em></h1>
+          <div className="eyebrow">§ Fall 2026 · Calendar</div>
+          <h1>The work, <em>coming soon.</em></h1>
           <p className="page-head-lede">
-            Salons, service Saturdays, the spring festival, our open-airs. Tap any event to RSVP — and add the whole semester to your calendar.
+            Renaissance Project returns in August 2026. Check back then for our full semester calendar — events, service days, and more.
           </p>
         </div>
       </header>
@@ -23,21 +23,19 @@ export default function EventsPage() {
       <section className="spotlight" data-screen-label="02 Spotlight">
         <div className="container">
           <div className="spotlight-card">
-            <div className="spotlight-poster">[ spring festival poster ]</div>
+            <div className="spotlight-poster">[ coming fall 2026 ]</div>
             <div className="spotlight-body">
-              <div className="spotlight-tag">⤬ Featured · Capstone</div>
-              <h2 className="spotlight-title">The Aggie Renaissance Festival</h2>
+              <div className="spotlight-tag">⤬ Coming Soon · Fall 2026</div>
+              <h2 className="spotlight-title">Renaissance Project Returns — August 2026</h2>
               <div className="spotlight-meta">
-                <span><strong>When</strong> Sat · Apr 18</span>
-                <span><strong>Time</strong> 11a — 8p</span>
-                <span><strong>Where</strong> Stewart Plaza</span>
+                <span><strong>When</strong> August 2026</span>
+                <span><strong>Where</strong> NC A&amp;T</span>
               </div>
               <p className="spotlight-desc">
-                A free, day-long block party on the corner of Bluford &amp; Lindsay — eight live performances, twenty student vendors, an open-air gallery from the Mural Guild, and the closing salon at sundown. Bring the whole hall.
+                We&apos;re gearing up for a big fall semester. Events, service days, and committee programming will be announced here when we return in August. Stay connected on Instagram for updates.
               </p>
               <div className="spotlight-cta">
-                <a href="#" className="btn">RSVP Free</a>
-                <a href="#" className="btn btn-ghost">View Lineup</a>
+                <a href="https://www.instagram.com/renaissanceproject2023" target="_blank" rel="noopener noreferrer" className="btn">Follow on Instagram</a>
               </div>
             </div>
           </div>
@@ -50,7 +48,7 @@ export default function EventsPage() {
           <div className="section-head">
             <div>
               <div className="eyebrow">§ Upcoming &amp; recent</div>
-              <h2 style={{ fontSize: "clamp(34px, 5.5vw, 56px)", marginTop: 16 }}>The semester at a glance.</h2>
+              <h2 style={{ fontSize: "clamp(34px, 5.5vw, 56px)", marginTop: 16 }}>Events dropping August 2026.</h2>
             </div>
             <div className="section-num">N°&nbsp;01 / 02</div>
           </div>

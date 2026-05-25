@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -8,8 +9,7 @@ const NAV = [
   { href: "/", label: "Home", num: "I" },
   { href: "/members", label: "Executive Board", num: "II" },
   { href: "/events", label: "Events", num: "III" },
-  { href: "/gallery", label: "Gallery", num: "IV" },
-  { href: "/faq", label: "FAQ", num: "V" },
+  { href: "/faq", label: "FAQ", num: "IV" },
 ];
 
 export default function Nav() {
@@ -32,7 +32,7 @@ export default function Nav() {
       <nav className="nav" data-screen-label="nav">
         <div className="nav-inner">
           <Link href="/" className="nav-brand" aria-label="Renaissance Project, NC A&T">
-            <div className="nav-brand-mark" aria-hidden="true" />
+            <Image src="/Ren Logo 2.PNG" alt="Renaissance Project Logo" width={40} height={40} style={{ objectFit: "contain" }} />
             <div className="nav-brand-text">
               <div className="nav-brand-title">Renaissance Project</div>
               <div className="nav-brand-sub">at NC A&amp;T</div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import TrailerVideo from "@/components/TrailerVideo";
 
@@ -14,8 +15,8 @@ export default function HomePage() {
         <div className="hero-bg" />
         <div className="container hero-inner">
           <div>
-            <div className="eyebrow hero-eyebrow">Est. MMXXII · NC A&amp;T State University</div>
-            <h1 className="hero-title">A new<br /><em>renaissance</em><br />for the Aggie city.</h1>
+            <div className="eyebrow hero-eyebrow">Est. MMXXIII · NC A&amp;T State University</div>
+            <h1 className="hero-title">A new<br /><em>renaissance</em><br />for Aggie land.</h1>
             <p className="hero-lede">
               We are students reviving the spirit of inquiry, art, and civic duty &mdash; one block, one classroom, one mural at a time. Service is our scholarship.
             </p>
@@ -26,15 +27,16 @@ export default function HomePage() {
           </div>
 
           <aside className="hero-card">
-            <div className="hero-card-medal"><span>R</span></div>
+            <div className="hero-card-medal"><Image src="/Ren Logo 2.PNG" alt="Renaissance Project Logo" width={80} height={80} style={{ objectFit: "contain" }} /></div>
             <h3>The Renaissance Project</h3>
-            <div className="hero-card-sub">A Chapter at NC A&amp;T</div>
+            <div className="hero-card-sub">Est. 2023 · NC A&amp;T State University</div>
             <div className="hero-stats">
-              <div className="hero-stat"><div className="hero-stat-num">142</div><div className="hero-stat-lbl">Active Members</div></div>
-              <div className="hero-stat"><div className="hero-stat-num">26</div><div className="hero-stat-lbl">Partner Orgs</div></div>
-              <div className="hero-stat"><div className="hero-stat-num">3.8k</div><div className="hero-stat-lbl">Service Hours</div></div>
-              <div className="hero-stat"><div className="hero-stat-num">IV</div><div className="hero-stat-lbl">Years on Campus</div></div>
+              <div className="hero-stat"><div className="hero-stat-num">III</div><div className="hero-stat-lbl">Years on Campus</div></div>
+              <div className="hero-stat"><div className="hero-stat-num">19</div><div className="hero-stat-lbl">Board Members</div></div>
+              <div className="hero-stat"><div className="hero-stat-num">5+</div><div className="hero-stat-lbl">Schools in Greensboro</div></div>
+              <div className="hero-stat"><div className="hero-stat-num">4</div><div className="hero-stat-lbl">Focus Areas</div></div>
             </div>
+            <div className="hero-card-partner">Proud partner of the Greensboro YMCA</div>
           </aside>
         </div>
       </section>
@@ -66,29 +68,28 @@ export default function HomePage() {
                 <span className="ornament-diamond" style={{ opacity: 0.6 }} />
                 <span className="ornament-diamond" />
               </div>
-              <p className="founders-caption">The founding cohort &middot; 2022</p>
+              <p className="founders-caption">The founding cohort &middot; 2023</p>
             </div>
 
             <div className="about-body">
-              <p className="dropcap">The Renaissance Project began with a question whispered between two Aggies on the steps of Dudley: <em>what would it look like to bring back the depth, the discipline, and the daring of a true renaissance &mdash; right here, on our campus?</em></p>
-              <p>What started as a reading circle has become a 142-strong cohort of students rebuilding murals in East Greensboro, tutoring at McNair Elementary, hosting open-air lectures on Black art history, and organizing the largest student-run community festival in the Triad.</p>
-              <p>We believe the most rigorous education is the one that meets the city at its doorstep. We believe a community service org should look more like a guild than a club &mdash; trades passed down, projects taken seriously, members who show up.</p>
+              <p className="dropcap">Founded in 2023, the Renaissance Project was built on a commitment to developing the whole student — academically, professionally, and civically. We exist to build excellence in STEM, Business &amp; Finance, Leadership &amp; Professionalism, and Community Service, while uplifting the greater Greensboro community and NC A&amp;T.</p>
+              <p>We believe that the most powerful thing an Aggie can do is show up — for their campus, for their community, and for the next generation coming behind them.</p>
 
               <div className="pillars">
                 <div className="pillar">
                   <div className="pillar-num">I.</div>
                   <h4>Serve</h4>
-                  <p>Weekly outreach, semesterly capstones, hands-on with our partners.</p>
+                  <p>Giving back to the greater Greensboro community through consistent, meaningful outreach and partnership.</p>
                 </div>
                 <div className="pillar">
                   <div className="pillar-num">II.</div>
-                  <h4>Study</h4>
-                  <p>Reading circles, salons, and field trips that pair art with action.</p>
+                  <h4>Grow</h4>
+                  <p>Building real skills in STEM, business, leadership, and professionalism that carry beyond the classroom.</p>
                 </div>
                 <div className="pillar">
                   <div className="pillar-num">III.</div>
-                  <h4>Create</h4>
-                  <p>Murals, zines, films, festivals &mdash; we make culture, not just consume it.</p>
+                  <h4>Execute</h4>
+                  <p>Turning vision into action &mdash; leading programs, running committees, and delivering results that make an impact.</p>
                 </div>
               </div>
             </div>
@@ -102,7 +103,7 @@ export default function HomePage() {
           <div className="section-head">
             <div>
               <div className="eyebrow">§ II · The Trailer</div>
-              <h2 className="about-head-title">One year, one chapter. <span className="italic-accent">Press play.</span></h2>
+              <h2 className="about-head-title">Don&apos;t take our word for it. <span className="italic-accent">See it yourself.</span></h2>
             </div>
             <div className="section-num">N°&nbsp;02 / 05</div>
           </div>
@@ -124,7 +125,7 @@ export default function HomePage() {
           <div className="section-head">
             <div>
               <div className="eyebrow">§ III · What we do</div>
-              <h2 className="about-head-title">Four pillars. Four ways in.</h2>
+              <h2 className="about-head-title">Four pillars. <span className="italic-accent">One mission.</span></h2>
             </div>
             <div className="section-num">N°&nbsp;03 / 05</div>
           </div>
@@ -132,21 +133,23 @@ export default function HomePage() {
           <div className="programs-grid">
             <div className="program-card">
               <div className="program-icon">I</div>
-              <h4>Mural Guild</h4>
-              <p>Restoring public art across East Greensboro with local artists and the city parks department.</p>
-              <div className="program-meta"><span>Sat · 9am</span><span>Year-round</span></div>
+              <h4>STEM</h4>
+              <p>Fostering academic excellence and curiosity in science, technology, engineering, and mathematics.</p>
             </div>
             <div className="program-card">
               <div className="program-icon">II</div>
-              <h4>Salon &amp; Study</h4>
-              <p>Reading circles on Baldwin, hooks, and Wilkerson. Hosted in living rooms across campus.</p>
-              <div className="program-meta"><span>Thu · 7pm</span><span>Weekly</span></div>
+              <h4>Business &amp; Finance</h4>
+              <p>Equipping members with the financial literacy and entrepreneurial mindset to build generational wealth.</p>
             </div>
             <div className="program-card">
               <div className="program-icon">III</div>
-              <h4>Aggie Tutors</h4>
-              <p>One-on-one tutoring at McNair Elementary and the Hayes-Taylor YMCA after-school program.</p>
-              <div className="program-meta"><span>Tue/Thu · 4pm</span><span>School year</span></div>
+              <h4>Leadership &amp; Professionalism</h4>
+              <p>Developing the next generation of leaders through real responsibility, mentorship, and professional development.</p>
+            </div>
+            <div className="program-card">
+              <div className="program-icon">IV</div>
+              <h4>Community Service</h4>
+              <p>Showing up for Greensboro and NC A&amp;T through consistent, meaningful outreach that makes a lasting difference.</p>
             </div>
           </div>
         </div>
