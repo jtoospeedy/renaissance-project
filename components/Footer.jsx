@@ -15,7 +15,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="foot-mission">
-              A student-led community service organization reviving the spirit of inquiry, art, and civic duty on the Aggie campus.
+              A student-led community service organization on the NC A&T campus.
             </p>
           </div>
           <div>

@@ -53,8 +53,7 @@ export default function TrailerVideo() {
     <div className="trailer-frame">
       <div className="trailer-video-wrap">
         <video ref={videoRef} controls preload="metadata" playsInline poster="">
-          <source src="/trailer.mp4" type="video/mp4" />
-          <source src="/trailer.webm" type="video/webm" />
+          <source src="/LandingPageVideo.mp4" type="video/mp4" />
         </video>
         <div
           className={`trailer-poster${showPoster ? "" : " is-hidden"}`}
@@ -62,8 +61,7 @@ export default function TrailerVideo() {
         >
           <div>
             <div className="play-btn"><div className="triangle" /></div>
-            {/* Escaped the brackets cleanly using standard string notation */}
-            <div className="trailer-poster-cap">{"[ drop trailer.mp4 in /public ]"}</div>
+            <div className="trailer-poster-cap">{"Watch Video"}</div>
           </div>
         </div>
       </div>

@@ -11,8 +11,8 @@ export default function MembersPage() {
       <header className="page-head" data-screen-label="01 Executive Board head">
         <div className="page-head-bg" />
         <div className="container">
-          <div className="eyebrow">§ The E-Board · MMXXVI</div>
-          <h1>Nineteen Aggies. <em>One project.</em></h1>
+          <div className="eyebrow">The E-Board</div>
+          <h1>The <br></br><em>Executive Board</em></h1>
           <p className="page-head-lede">
             Selected through an application and interview process, each board member serves a one-year term driven by a single purpose — to leave Renaissance Project better than they found it.
           </p>

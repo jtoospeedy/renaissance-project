@@ -36,7 +36,7 @@ export default function MembersGrid() {
         </div>
       </div>
 
-      <div className="members-grid">
+      <div className={`members-grid grid-${filter}`}>
         {items.map((m) => (
           <article
             key={m.id}
@@ -50,7 +50,7 @@ export default function MembersGrid() {
               <div className="member-portrait">
                 <div className="member-halo" />
                 {m.image
-                  ? <Image src={m.image} alt={m.name} fill sizes="160px" style={{ objectFit: "cover", borderRadius: "50%" }} />
+                  ? <Image src={m.image} alt={m.name} fill sizes="160px" style={{ objectFit: "cover" }} />
                   : <div className="member-initials-cap">[ portrait ]</div>
                 }
               </div>

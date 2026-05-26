@@ -2,8 +2,6 @@ import { Cinzel, EB_Garamond, JetBrains_Mono, Bodoni_Moda, Cormorant_Upright, Lo
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import TweaksPanel from "@/components/TweaksPanel";
-import ApplyTweaksEarly from "@/components/ApplyTweaksEarly";
 
 // Load fonts via next/font for self-hosting + zero layout shift
 const cinzel = Cinzel({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-cinzel" });
@@ -39,13 +37,11 @@ export default function RootLayout({ children }) {
   ].join(" ");
 
   return (
-    <html lang="en" data-mode="dark" data-palette="vermillion" data-type="classic" className={fontVars}>
+    <html lang="en" data-mode="dark" data-palette="vermillion" data-type="modern" className={fontVars}>
       <body>
-        <ApplyTweaksEarly />
         <Nav />
         {children}
         <Footer />
-        <TweaksPanel />
       </body>
     </html>
   );

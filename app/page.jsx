@@ -15,10 +15,10 @@ export default function HomePage() {
         <div className="hero-bg" />
         <div className="container hero-inner">
           <div>
-            <div className="eyebrow hero-eyebrow">Est. MMXXIII · NC A&amp;T State University</div>
-            <h1 className="hero-title">A new<br /><em>renaissance</em><br />for Aggie land.</h1>
+            <div className="eyebrow hero-eyebrow">Est. 2023 · NC A&amp;T State University</div>
+            <h1 className="hero-title">The<br /><em>Renaissance</em><br />Project</h1>
             <p className="hero-lede">
-              We are students reviving the spirit of inquiry, art, and civic duty &mdash; one block, one classroom, one mural at a time. Service is our scholarship.
+             A community of men committed to pursuing and spreading knowledge in the areas of STEM, professionalism, financial literacy, and social responsibility.
             </p>
             <div className="hero-cta">
               <Link href="/faq#join" className="btn">Join the Project</Link>
@@ -29,7 +29,7 @@ export default function HomePage() {
           <aside className="hero-card">
             <div className="hero-card-medal"><Image src="/Ren Logo 2.PNG" alt="Renaissance Project Logo" width={80} height={80} style={{ objectFit: "contain" }} /></div>
             <h3>The Renaissance Project</h3>
-            <div className="hero-card-sub">Est. 2023 · NC A&amp;T State University</div>
+            <div className="hero-card-sub">Stats</div>
             <div className="hero-stats">
               <div className="hero-stat"><div className="hero-stat-num">III</div><div className="hero-stat-lbl">Years on Campus</div></div>
               <div className="hero-stat"><div className="hero-stat-num">19</div><div className="hero-stat-lbl">Board Members</div></div>
@@ -54,10 +54,10 @@ export default function HomePage() {
         <div className="container">
           <div className="section-head">
             <div>
-              <div className="eyebrow">§ I · Our mission</div>
-              <h2 className="about-head-title">A student-led revival of <span className="italic-accent">service, scholarship &amp; soul.</span></h2>
+              <div className="eyebrow">Our mission</div>
+              <h2 className="about-head-title">Our Mission</h2>
             </div>
-            <div className="section-num">N°&nbsp;01 / 05</div>
+            {/* <div className="section-num">N°&nbsp;01 / 05</div> */}
           </div>
 
           <div className="about-grid">
@@ -105,17 +105,12 @@ export default function HomePage() {
               <div className="eyebrow">§ II · The Trailer</div>
               <h2 className="about-head-title">Don&apos;t take our word for it. <span className="italic-accent">See it yourself.</span></h2>
             </div>
-            <div className="section-num">N°&nbsp;02 / 05</div>
+            {/* <div className="section-num">N°&nbsp;02 / 05</div> */}
           </div>
 
           <TrailerVideo />
 
-          <div className="trailer-caption">
-            <p className="muted" style={{ fontSize: 15, maxWidth: 640 }}>
-              Directed by the 2025 media team. Filmed across Greensboro, McLeansville, and the A&amp;T campus over twelve weeks of service projects, salons, and Sunday open-airs.
-            </p>
-            <div className="trailer-runtime">2:47 · 4K · Sound on</div>
-          </div>
+          
         </div>
       </section>
 
@@ -124,10 +119,10 @@ export default function HomePage() {
         <div className="container">
           <div className="section-head">
             <div>
-              <div className="eyebrow">§ III · What we do</div>
-              <h2 className="about-head-title">Four pillars. <span className="italic-accent">One mission.</span></h2>
+              <div className="eyebrow">What we do</div>
+              <h2 className="about-head-title">The Four pillars.</h2>
             </div>
-            <div className="section-num">N°&nbsp;03 / 05</div>
+            {/* <div className="section-num">N°&nbsp;03 / 05</div> */}
           </div>
 
           <div className="programs-grid">
@@ -162,9 +157,9 @@ export default function HomePage() {
             <span className="ornament-diamond" />
           </div>
           <h2>Service is our scholarship. <em>Will you take up the work?</em></h2>
-          <p className="cta-lede">Applications open every August and January. Anyone with a campus email may apply.</p>
+          <p className="cta-lede">Applications are currently closed. <br></br>An announcement will be made when they open for Fall 2026.<br></br>In the meantime, check out the following:</p>
           <div className="cta-actions">
-            <Link href="/faq#join" className="btn">How to Join</Link>
+            <Link href="/faq#join" className="btn">FAQ</Link>
             <Link href="/members" className="btn btn-ghost">Meet the E-Board</Link>
           </div>
         </div>
