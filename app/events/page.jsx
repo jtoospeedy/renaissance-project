@@ -55,13 +55,7 @@ export default function EventsPage() {
 
           <EventsList />
 
-          <div className="ical-band">
-            <div>
-              <div className="ical-title">Take it with you.</div>
-              <div className="ical-sub">Subscribe to the Renaissance Project calendar — auto-syncs every new event to Apple Calendar, Google, or Outlook.</div>
-            </div>
-            <a href="#" className="btn">Subscribe · .ics</a>
-          </div>
+          
         </div>
       </section>
     </>

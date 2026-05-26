@@ -15,11 +15,8 @@ export default function FAQPage() {
       <header className="page-head" data-screen-label="01 FAQ head">
         <div className="page-head-bg" />
         <div className="container">
-          <div className="eyebrow">§ Questions · Joining · Reaching us</div>
+          <div className="eyebrow">Questions · Joining · Reaching us</div>
           <h1>Everything you might <em>want to know.</em></h1>
-          <p className="page-head-lede">
-            If your question isn&apos;t here, send us a note — a board member writes back within 48 hours during the school year.
-          </p>
         </div>
       </header>
 
@@ -116,14 +113,14 @@ export default function FAQPage() {
               <div className="eyebrow">§ Get in touch</div>
               <h2 style={{ fontSize: "clamp(34px, 5.5vw, 56px)", marginTop: 16 }}>Find us, follow us, write us.</h2>
             </div>
-            <div className="section-num">N°&nbsp;03 / 03</div>
+            {/* <div className="section-num">N°&nbsp;03 / 03</div> */}
           </div>
 
           <div className="contact-grid">
             <a href="mailto:hello@rp-ncat.org" className="contact-card">
               <div className="contact-card-icon">✉</div>
               <h4>Email</h4>
-              <div className="contact-card-val">hello@rp-ncat.org</div>
+              <div className="contact-card-val">renaissanceprojectgso@gmail.com</div>
               <div className="contact-card-sub">For partners, press, and questions.</div>
             </a>
             <a href="https://www.instagram.com/renaissanceproject2023" target="_blank" rel="noopener noreferrer" className="contact-card">
@@ -131,18 +128,6 @@ export default function FAQPage() {
               <h4>Instagram</h4>
               <div className="contact-card-val">@renaissanceproject2023</div>
               <div className="contact-card-sub">Updates, recaps, and announcements.</div>
-            </a>
-            <a href="#" className="contact-card">
-              <div className="contact-card-icon">⌂</div>
-              <h4>Office Hours</h4>
-              <div className="contact-card-val">AHC · Bay 4</div>
-              <div className="contact-card-sub">Wednesdays · 4 — 6 pm</div>
-            </a>
-            <a href="#" className="contact-card">
-              <div className="contact-card-icon">✱</div>
-              <h4>Faculty Advisor</h4>
-              <div className="contact-card-val">Dr. K. Etheridge</div>
-              <div className="contact-card-sub">English Dept · Crosby 314</div>
             </a>
           </div>
         </div>
