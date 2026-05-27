@@ -15,7 +15,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="foot-mission">
-              A student-led community service organization on the NC A&T campus.
+              Building the complete man through service, growth, and execution — at NC A&T and in the Greensboro community.
             </p>
           </div>
           <div>
