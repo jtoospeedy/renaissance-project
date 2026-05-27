@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="foot-bottom">
-          <span>© MMXXVI · Renaissance Project · NC A&amp;T</span>
+          <span>© Renaissance Project · NC A&amp;T</span>
           <span>Greensboro, NC</span>
         </div>
       </div>

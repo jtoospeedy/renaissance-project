@@ -1,5 +1,4 @@
 import FAQAccordion from "@/components/FAQAccordion";
-import ApplyForm from "@/components/ApplyForm";
 import HashScroll from "@/components/HashScroll";
 
 export const metadata = {
@@ -20,14 +19,6 @@ export default function FAQPage() {
         </div>
       </header>
 
-      <div className="anchor-bar">
-        <div className="anchor-bar-inner">
-          <a href="#faq" className="anchor-chip">⤬ FAQ</a>
-          <a href="#join" className="anchor-chip">⤬ How to Join</a>
-          <a href="#contact" className="anchor-chip">⤬ Contact</a>
-        </div>
-      </div>
-
       {/* FAQ */}
       <section className="faq" id="faq" data-screen-label="02 FAQ">
         <div className="container">
@@ -38,8 +29,6 @@ export default function FAQPage() {
                 <li><a href="#cat-about" className="anchor-chip" style={{ border: "none", padding: 0 }}>About Renaissance Project</a></li>
                 <li><a href="#cat-join" className="anchor-chip" style={{ border: "none", padding: 0 }}>Joining &amp; eligibility</a></li>
                 <li><a href="#cat-time" className="anchor-chip" style={{ border: "none", padding: 0 }}>Time &amp; commitment</a></li>
-                <li><a href="#cat-money" className="anchor-chip" style={{ border: "none", padding: 0 }}>Dues &amp; funding</a></li>
-                <li><a href="#cat-misc" className="anchor-chip" style={{ border: "none", padding: 0 }}>Misc.</a></li>
               </ul>
             </aside>
 
@@ -53,19 +42,19 @@ export default function FAQPage() {
         <div className="container">
           <div className="section-head">
             <div>
-              <div className="eyebrow">§ How to Join</div>
+              <div className="eyebrow">How to Join</div>
               <h2 style={{ fontSize: "clamp(34px, 5.5vw, 56px)", marginTop: 16 }}>
                 Apply once. <span className="italic-accent">Stay forever.</span>
               </h2>
             </div>
-            <div className="section-num">N°&nbsp;02 / 03</div>
+            {/* <div className="section-num">N°&nbsp;02 / 03</div> */}
           </div>
 
           <div className="join-grid">
             <div>
               <p className="muted" style={{ fontSize: 17, lineHeight: 1.6, maxWidth: 540 }}>
-                We take new cohorts twice a year — early September and mid-January. Anyone with a valid{" "}
-                <strong style={{ color: "var(--c-ink)", fontWeight: 500 }}>@aggies.ncat.edu</strong> address may apply. No GPA cutoff, no major requirement, no fee.
+                We take new members once a year. Any male NC A&T student apply with a valid{" "}
+                <strong style={{ color: "var(--c-ink)", fontWeight: 500 }}>@aggies.ncat.edu</strong> address may apply. <br></br><br></br>* Must be in good academic standing, no major requirement.
               </p>
 
               <div className="join-steps">
@@ -73,34 +62,56 @@ export default function FAQPage() {
                   <div className="join-step-num" />
                   <div>
                     <h4>Submit the form</h4>
-                    <p>Five short questions and one paragraph. Takes about ten minutes — really.</p>
+                    <p>Answer a few short questions about who you are and what drives you. Be genuine — we read every response carefully.</p>
                   </div>
                 </div>
                 <div className="join-step">
                   <div className="join-step-num" />
                   <div>
-                    <h4>Coffee with the board</h4>
-                    <p>A twenty-minute conversation with two e-board members. Casual. Wear what you want.</p>
+                    <h4>Interview</h4>
+                    <p>A brief interview with members of the executive board. No right answers — just a real conversation about your goals and character.</p>
                   </div>
                 </div>
                 <div className="join-step">
                   <div className="join-step-num" />
                   <div>
-                    <h4>Shadow a project</h4>
-                    <p>Tag along on one Saturday service day or a Thursday salon. See if the vibe fits.</p>
-                  </div>
-                </div>
-                <div className="join-step">
-                  <div className="join-step-num" />
-                  <div>
-                    <h4>The induction</h4>
-                    <p>A small ceremony at the end of the month with the rest of your cohort. You&apos;re in.</p>
+                    <h4>Acceptance</h4>
+                    <p>Selected applicants are welcomed into the organization and introduced to the full membership.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <ApplyForm />
+            <blockquote className="join-quote" style={{
+              border: "1px solid var(--c-line)",
+              background: "var(--c-ground-2)",
+              borderRadius: 4,
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              gap: 32,
+              margin: 0,
+              alignSelf: "center",
+            }}>
+              <div style={{
+                fontFamily: "var(--f-display)",
+                fontSize: "clamp(22px, 2.6vw, 30px)",
+                lineHeight: 1.4,
+                color: "var(--c-ink)",
+                fontStyle: "italic",
+              }}>
+                &ldquo;Life&apos;s most persistent and urgent question is: what are you doing for others?&rdquo;
+              </div>
+              <div style={{
+                fontFamily: "var(--f-mono)",
+                fontSize: 11,
+                letterSpacing: "0.2em",
+                textTransform: "uppercase",
+                color: "var(--c-muted)",
+              }}>
+                — Martin Luther King Jr.
+              </div>
+            </blockquote>
           </div>
         </div>
       </section>
@@ -108,9 +119,9 @@ export default function FAQPage() {
       {/* CONTACT */}
       <section className="contact" id="contact" data-screen-label="04 Contact">
         <div className="container">
-          <div className="section-head">
+          <div className="section-head" style={{ justifyContent: "center", textAlign: "center" }}>
             <div>
-              <div className="eyebrow">§ Get in touch</div>
+              <div className="eyebrow">Get in touch</div>
               <h2 style={{ fontSize: "clamp(34px, 5.5vw, 56px)", marginTop: 16 }}>Find us, follow us, write us.</h2>
             </div>
             {/* <div className="section-num">N°&nbsp;03 / 03</div> */}

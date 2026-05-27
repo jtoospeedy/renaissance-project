@@ -102,7 +102,7 @@ export default function HomePage() {
         <div className="container">
           <div className="section-head">
             <div>
-              <div className="eyebrow">§ II · The Trailer</div>
+              <div className="eyebrow">The Trailer</div>
               <h2 className="about-head-title">Don&apos;t take our word for it. <span className="italic-accent">See it yourself.</span></h2>
             </div>
             {/* <div className="section-num">N°&nbsp;02 / 05</div> */}
