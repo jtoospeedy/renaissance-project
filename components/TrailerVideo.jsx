@@ -53,7 +53,7 @@ export default function TrailerVideo() {
     <div className="trailer-frame">
       <div className="trailer-video-wrap">
         <video ref={videoRef} controls preload="metadata" playsInline poster="">
-          <source src="/LandingPageVideo.mp4" type="video/mp4" />
+          <source src="/0505(1).mp4" type="video/mp4" />
         </video>
         <div
           className={`trailer-poster${showPoster ? "" : " is-hidden"}`}

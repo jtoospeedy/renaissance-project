@@ -27,6 +27,7 @@ export default function FAQPage() {
               <div className="faq-sidebar-title">In this section</div>
               <ul>
                 <li><a href="#cat-about" className="anchor-chip" style={{ border: "none", padding: 0 }}>About Renaissance Project</a></li>
+                <li><a href="#cat-what-we-do" className="anchor-chip" style={{ border: "none", padding: 0 }}>What We Do</a></li>
                 <li><a href="#cat-join" className="anchor-chip" style={{ border: "none", padding: 0 }}>Joining &amp; eligibility</a></li>
                 <li><a href="#cat-time" className="anchor-chip" style={{ border: "none", padding: 0 }}>Time &amp; commitment</a></li>
               </ul>
@@ -44,7 +45,7 @@ export default function FAQPage() {
             <div>
               <div className="eyebrow">How to Join</div>
               <h2 style={{ fontSize: "clamp(34px, 5.5vw, 56px)", marginTop: 16 }}>
-                Apply once. <span className="italic-accent">Stay forever.</span>
+                Apply. <span className="italic-accent">Be part of something.</span>
               </h2>
             </div>
             {/* <div className="section-num">N°&nbsp;02 / 03</div> */}

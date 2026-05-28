@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600"], variabl
 export const metadata = {
   title: "Renaissance Project · NC A&T",
   description:
-    "A student-led community service organization at NC A&T reviving the spirit of inquiry, art, and civic duty.",
+    "A member-led organization at NC A&T committed to building the complete man through STEM, business, leadership, and community service.",
 };
 
 export const viewport = {

@@ -4,7 +4,7 @@ import TrailerVideo from "../components/TrailerVideo";
 
 export const metadata = {
   title: "Renaissance Project · NC A&T",
-  description: "A student-led community service organization at NC A&T reviving the spirit of inquiry, art, and civic duty.",
+  description: "A member-led organization at NC A&T committed to building the complete man through STEM, business, leadership, and community service.",
 };
 
 export default function HomePage() {
@@ -62,17 +62,17 @@ export default function HomePage() {
 
           <div className="about-grid">
             <div className="founders-card">
-              <div className="placeholder" style={{ aspectRatio: "3 / 4", borderRadius: "180px 180px 4px 4px" }}>[ founders' portrait ]</div>
+              <Image src="/img/IMG_8513.JPG" alt="The founding cohort" style={{ width: "100%", height: "auto", borderRadius: "180px 180px 4px 4px", display: "block" }} width={600} height={800} />
               <div className="ornament-divider" style={{ margin: "20px 0" }}>
                 <span className="ornament-diamond" />
                 <span className="ornament-diamond" style={{ opacity: 0.6 }} />
                 <span className="ornament-diamond" />
               </div>
-              <p className="founders-caption">The founding cohort &middot; 2023</p>
+              <p className="founders-caption">Korbin Ferguson &middot; Founder &middot; Est. 2023</p>
             </div>
 
             <div className="about-body">
-              <p className="dropcap">Founded in 2023, the Renaissance Project was built on a commitment to developing the whole student — academically, professionally, and civically. We exist to build excellence in STEM, Business &amp; Finance, Leadership &amp; Professionalism, and Community Service, while uplifting the greater Greensboro community and NC A&amp;T.</p>
+              <p className="dropcap">Founded in 2023, the Renaissance Project was built on a commitment to developing the whole man — academically, professionally, and civically. We exist to build excellence in STEM, Business &amp; Finance, Leadership &amp; Professionalism, and Community Service, while uplifting the greater Greensboro community and NC A&amp;T.</p>
               <p>We believe that the most powerful thing an Aggie can do is show up — for their campus, for their community, and for the next generation coming behind them.</p>
 
               <div className="pillars">
@@ -108,9 +108,26 @@ export default function HomePage() {
             {/* <div className="section-num">N°&nbsp;02 / 05</div> */}
           </div>
 
-          <TrailerVideo />
+          <div className="trailer-layout">
+            <div className="trailer-side trailer-side-left">
+              <div className="trailer-side-quote">&ldquo;The most powerful thing an Aggie can do is show up.&rdquo;</div>
+              <div className="trailer-side-divider" />
+              <div className="trailer-side-stat"><span>19</span>Board Members</div>
+              <div className="trailer-side-stat"><span>III</span>Years Strong</div>
+              <div className="trailer-side-stat"><span>4</span>Committees</div>
+            </div>
 
-          
+            <TrailerVideo />
+
+            <div className="trailer-side trailer-side-right">
+              <div className="trailer-side-label">Est. 2023 · NC A&amp;T</div>
+              <div className="trailer-side-divider" />
+              <p className="trailer-side-desc">Renaissance Project is building men of character, discipline, and purpose — on campus and in the greater Greensboro community.</p>
+              <div className="trailer-side-divider" />
+              <div className="trailer-side-label">Follow us</div>
+              <a href="https://www.instagram.com/renaissanceproject2023" target="_blank" rel="noopener noreferrer" className="trailer-side-ig">@renaissanceproject2023</a>
+            </div>
+          </div>
         </div>
       </section>
 

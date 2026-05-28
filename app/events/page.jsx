@@ -23,7 +23,9 @@ export default function EventsPage() {
       <section className="spotlight" data-screen-label="02 Spotlight">
         <div className="container">
           <div className="spotlight-card">
-            <div className="spotlight-poster">[ coming fall 2026 ]</div>
+            <div className="spotlight-poster" style={{ padding: 0, overflow: "hidden" }}>
+                <img src="/img/IMG_2001.jpg" alt="Renaissance Project Fall 2026" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+              </div>
             <div className="spotlight-body">
               <div className="spotlight-tag">⤬ Coming Soon · Fall 2026</div>
               <h2 className="spotlight-title">Renaissance Project Returns — August 2026</h2>
