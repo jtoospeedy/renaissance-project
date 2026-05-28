@@ -2,6 +2,7 @@ import { Cinzel, EB_Garamond, JetBrains_Mono, Bodoni_Moda, Cormorant_Upright, Lo
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 // Load fonts via next/font for self-hosting + zero layout shift
 const cinzel = Cinzel({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-cinzel" });
@@ -42,6 +43,7 @@ export default function RootLayout({ children }) {
         <Nav />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

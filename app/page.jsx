@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import TrailerVideo from "../components/TrailerVideo";
+import { Analytics } from "@vercel/analytics/next"
+
 
 export const metadata = {
   title: "Renaissance Project · NC A&T",
