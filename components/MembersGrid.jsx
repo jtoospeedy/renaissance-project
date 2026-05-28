@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { MEMBERS, MEMBER_FILTERS } from "@/lib/members";
+import { MEMBERS, MEMBER_FILTERS } from "@/components/lib/members";
 
 export default function MembersGrid() {
   const [filter, setFilter] = useState("all");

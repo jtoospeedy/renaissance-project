@@ -12,7 +12,7 @@ export default function GalleryPage() {
       <header className="page-head" data-screen-label="01 Gallery head">
         <div className="page-head-bg" />
         <div className="container">
-          <div className="eyebrow">§ Renaissance Project, in pictures</div>
+          <div className="eyebrow">Renaissance Project, in pictures</div>
           <h1>Four years of <em>showing up.</em></h1>
           <p className="page-head-lede">Murals, salons, Saturdays in the cold, Sundays on the plaza. Tap a photo to see the story.</p>
         </div>

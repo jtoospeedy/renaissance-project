@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { PHOTOS, ERAS } from "@/lib/photos";
+import { PHOTOS, ERAS } from "@/components/lib/photos";
 
 export default function Gallery() {
   const [era, setEra] = useState("all");

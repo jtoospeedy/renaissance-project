@@ -4,7 +4,6 @@ export const FAQ = [
     title: "About Renaissance Project",
     items: [
       { q: "What exactly is the Renaissance Project?", a: "<p>We're a member-led organization at NC A&amp;T, founded in 2023, committed to building the complete man in today's world. We work across four pillars — STEM, Business &amp; Finance, Leadership &amp; Professionalism, and Community Service — while uplifting the greater Greensboro community and NC A&amp;T.</p>" },
-      { q: "Are you affiliated with a national org or fraternity?", a: "<p>No. We're a chapter unique to NC A&amp;T. We're occasionally mistaken for a chapter of a national service organization — flattering, but no. We're our own thing.</p>" },
     ],
   },
   {
@@ -21,9 +20,8 @@ export const FAQ = [
     title: "Joining & eligibility",
     items: [
       { q: "Who can apply?", a: "<p>Any currently-enrolled NC A&amp;T student with a valid @aggies.ncat.edu address. We accept undergrads and graduate students. No GPA cutoff, no major requirement.</p>" },
-      { q: "When does the application open?", a: "<p>Once a year in the fall semester. Applications stay open for about three weeks. We review on a rolling basis, so applying early helps.</p>" },
+      { q: "When does the application open?", a: "<p>Once a year in the fall semester. Applications stay open for about three weeks.</p>" },
       { q: "Is there an interview?", a: "<p>Yes, a casual conversation with two board members. We mostly want to hear how you talk about service and community — there are no wrong answers and no quizzes.</p>" },
-      { q: "What if I'm a transfer student or come in mid-semester?", a: "<p>Reach out anyway. We've inducted transfers between cycles when it makes sense. Email <strong>renaissanceprojectgso@gmail.com</strong> and someone from our board will get back to you.</p>" },
     ],
   },
   {

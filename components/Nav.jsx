@@ -88,7 +88,6 @@ export default function Nav() {
               className={`mobile-menu-link${isActive(n.href) ? " is-active" : ""}`}
             >
               <span>{n.label}</span>
-              <span className="mobile-menu-link-num">N° {n.num}</span>
             </Link>
           ))}
         </div>

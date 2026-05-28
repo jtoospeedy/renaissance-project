@@ -11,7 +11,7 @@ export default function EventsPage() {
       <header className="page-head" data-screen-label="01 Events head">
         <div className="page-head-bg" />
         <div className="container">
-          <div className="eyebrow">§ Fall 2026 · Calendar</div>
+          <div className="eyebrow">Fall 2026 · Calendar</div>
           <h1>The work, <em>coming soon.</em></h1>
           <p className="page-head-lede">
             Renaissance Project returns in August 2026. Check back then for our full semester calendar — events, service days, and more.
@@ -24,7 +24,7 @@ export default function EventsPage() {
         <div className="container">
           <div className="spotlight-card">
             <div className="spotlight-poster" style={{ padding: 0, overflow: "hidden" }}>
-                <img src="/img/IMG_2001.jpg" alt="Renaissance Project Fall 2026" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                <img src="/img/IMG_2001.jpg" alt="Renaissance Project Fall 2026" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center bottom", display: "block" }} />
               </div>
             <div className="spotlight-body">
               <div className="spotlight-tag">⤬ Coming Soon · Fall 2026</div>
@@ -49,10 +49,10 @@ export default function EventsPage() {
         <div className="container">
           <div className="section-head">
             <div>
-              <div className="eyebrow">§ Upcoming &amp; recent</div>
+              <div className="eyebrow">Upcoming &amp; recent</div>
               <h2 style={{ fontSize: "clamp(34px, 5.5vw, 56px)", marginTop: 16 }}>Events dropping August 2026.</h2>
             </div>
-            <div className="section-num">N°&nbsp;01 / 02</div>
+            {/* <div className="section-num">N°&nbsp;01 / 02</div> */}
           </div>
 
           <EventsList />

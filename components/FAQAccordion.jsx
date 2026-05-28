@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FAQ } from "@/lib/faq";
+import { FAQ } from "@/components/lib/faq";
 
 export default function FAQAccordion() {
   const [openCat, setOpenCat] = useState(null);
@@ -21,7 +21,7 @@ export default function FAQAccordion() {
                 setOpenKey(null);
               }}
               aria-expanded={catOpen}
-              style={{ width: "100%", textAlign: "left", background: "none", border: "none", cursor: "pointer", padding: 0 }}
+              style={{ width: "100%", textAlign: "left", background: "none", cursor: "pointer", padding: 0 }}
             >
               <h3 className="faq-cat-title">{cat.title}</h3>
               <div className="faq-cat-count" style={{ display: "flex", alignItems: "center", gap: 8 }}>

@@ -44,8 +44,8 @@ export default function HomePage() {
       {/* MARQUEE */}
       <div className="marquee" aria-hidden="true">
         <div className="marquee-track">
-          <span>Service <i className="dot" /> Scholarship <i className="dot" /> Culture <i className="dot" /> Community <i className="dot" /> Inquiry <i className="dot" /> Art <i className="dot" /></span>
-          <span>Service <i className="dot" /> Scholarship <i className="dot" /> Culture <i className="dot" /> Community <i className="dot" /> Inquiry <i className="dot" /> Art <i className="dot" /></span>
+          <span>Brotherhood <i className="dot" /> Leadership <i className="dot" /> Mentoring <i className="dot" /> Community <i className="dot" /></span>
+          <span>Brotherhood <i className="dot" /> Leadership <i className="dot" /> Mentoring <i className="dot" /> Community <i className="dot" /></span>
         </div>
       </div>
 
@@ -109,17 +109,12 @@ export default function HomePage() {
           </div>
 
           <div className="trailer-layout">
-            <div className="trailer-side trailer-side-left">
-              <div className="trailer-side-quote">&ldquo;The most powerful thing an Aggie can do is show up.&rdquo;</div>
+            <div className="trailer-info-panel">
               <div className="trailer-side-divider" />
               <div className="trailer-side-stat"><span>19</span>Board Members</div>
               <div className="trailer-side-stat"><span>III</span>Years Strong</div>
               <div className="trailer-side-stat"><span>4</span>Committees</div>
-            </div>
-
-            <TrailerVideo />
-
-            <div className="trailer-side trailer-side-right">
+              <div className="trailer-side-divider" />
               <div className="trailer-side-label">Est. 2023 · NC A&amp;T</div>
               <div className="trailer-side-divider" />
               <p className="trailer-side-desc">Renaissance Project is building men of character, discipline, and purpose — on campus and in the greater Greensboro community.</p>
@@ -127,6 +122,8 @@ export default function HomePage() {
               <div className="trailer-side-label">Follow us</div>
               <a href="https://www.instagram.com/renaissanceproject2023" target="_blank" rel="noopener noreferrer" className="trailer-side-ig">@renaissanceproject2023</a>
             </div>
+
+            <TrailerVideo />
           </div>
         </div>
       </section>

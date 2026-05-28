@@ -83,36 +83,78 @@ export default function FAQPage() {
               </div>
             </div>
 
-            <blockquote className="join-quote" style={{
-              border: "1px solid var(--c-line)",
-              background: "var(--c-ground-2)",
-              borderRadius: 4,
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              gap: 32,
-              margin: 0,
-              alignSelf: "center",
-            }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
               <div style={{
-                fontFamily: "var(--f-display)",
-                fontSize: "clamp(22px, 2.6vw, 30px)",
-                lineHeight: 1.4,
-                color: "var(--c-ink)",
-                fontStyle: "italic",
+                padding: "28px 36px",
+                border: "1px solid var(--c-accent)",
+                background: "color-mix(in oklab, var(--c-accent) 10%, var(--c-ground-2))",
+                borderRadius: 4,
+                display: "flex",
+                alignItems: "center",
+                gap: 24,
+                flexWrap: "wrap",
               }}>
-                &ldquo;Life&apos;s most persistent and urgent question is: what are you doing for others?&rdquo;
+                <div style={{
+                  fontFamily: "var(--f-mono)",
+                  fontSize: 10,
+                  letterSpacing: "0.25em",
+                  textTransform: "uppercase",
+                  color: "var(--c-accent)",
+                  whiteSpace: "nowrap",
+                }}>⊗ Applications</div>
+                <div style={{ width: 1, height: 36, background: "var(--c-line-strong)", flexShrink: 0 }} />
+                <div>
+                  <div style={{
+                    fontFamily: "var(--f-display)",
+                    fontSize: "clamp(18px, 2vw, 24px)",
+                    color: "var(--c-ink)",
+                    letterSpacing: "0.04em",
+                  }}>
+                    Applications are currently closed.
+                  </div>
+                  <div style={{
+                    fontFamily: "var(--f-mono)",
+                    fontSize: 11,
+                    letterSpacing: "0.15em",
+                    textTransform: "uppercase",
+                    color: "var(--c-muted)",
+                    marginTop: 8,
+                  }}>
+                    An announcement will be made when they open for Fall 2026.
+                  </div>
+                </div>
               </div>
-              <div style={{
-                fontFamily: "var(--f-mono)",
-                fontSize: 11,
-                letterSpacing: "0.2em",
-                textTransform: "uppercase",
-                color: "var(--c-muted)",
+
+              <blockquote className="join-quote" style={{
+                border: "1px solid var(--c-line)",
+                background: "var(--c-ground-2)",
+                borderRadius: 4,
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                gap: 32,
+                margin: 0,
               }}>
-                — Martin Luther King Jr.
-              </div>
-            </blockquote>
+                <div style={{
+                  fontFamily: "var(--f-display)",
+                  fontSize: "clamp(22px, 2.6vw, 30px)",
+                  lineHeight: 1.4,
+                  color: "var(--c-ink)",
+                  fontStyle: "italic",
+                }}>
+                  &ldquo;Life&apos;s most persistent and urgent question is: what are you doing for others?&rdquo;
+                </div>
+                <div style={{
+                  fontFamily: "var(--f-mono)",
+                  fontSize: 11,
+                  letterSpacing: "0.2em",
+                  textTransform: "uppercase",
+                  color: "var(--c-muted)",
+                }}>
+                  — Martin Luther King Jr.
+                </div>
+              </blockquote>
+            </div>
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { EVENTS } from "@/lib/events";
+import { EVENTS } from "@/components/lib/events";
 
 const TABS = [
   { id: "upcoming", label: "Upcoming" },
